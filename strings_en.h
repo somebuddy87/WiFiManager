@@ -51,7 +51,7 @@ const char HTTP_FORM_START[]       PROGMEM = "<form method='POST' action='{v}'>"
 const char HTTP_FORM_WIFI[]        PROGMEM = "<label for='s'>SSID</label><input id='s' name='s' maxlength='32' autocorrect='off' autocapitalize='none' placeholder='{v}'><br/><label for='p'>Password</label><input id='p' name='p' maxlength='64' type='password' placeholder='{p}'>";
 const char HTTP_FORM_WIFI_END[]    PROGMEM = "";
 const char HTTP_FORM_STATIC_HEAD[] PROGMEM = "<hr><br/>";
-const char HTTP_FORM_END[]         PROGMEM = "<br/><br/><button type='submit'>Save</button><input type="button" value="Go back!" onclick="history.back()"></form>";
+const char HTTP_FORM_END[]         PROGMEM = "<br/><br/><button type='submit'>Save</button><input type='button' value='Go back!' onclick='history.back()'></form>";
 const char HTTP_FORM_LABEL[]       PROGMEM = "<label for='{i}'>{t}</label>";
 const char HTTP_FORM_PARAM_HEAD[]  PROGMEM = "<hr><br/>";
 const char HTTP_FORM_PARAM[]       PROGMEM = "<br/><input id='{i}' name='{n}' maxlength='{l}' value='{v}' {c}>";
@@ -339,6 +339,7 @@ const wifi_country_t WM_COUNTRY_JP{"JP",1,14,WIFI_COUNTRY_POLICY_AUTO};
 #endif
 
 #endif
+
 
 
 

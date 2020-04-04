@@ -16,7 +16,7 @@
 #ifndef WIFI_MANAGER_OVERRIDE_STRINGS
 // !!! THIS DOES NOT WORK, you cannot define in a sketch, if anyone one knows how to order includes to be able to do this help!
 
-const char HTTP_HEAD_START[]       PROGMEM = "<!DOCTYPE html><html lang='en'><head><meta name='format-detection' content='telephone=no'><meta charset='UTF-8'><meta  name='viewport' content='width=device-width,initial-scale=1,user-scalable=no'/><title>Loxa!</title>";
+const char HTTP_HEAD_START[]       PROGMEM = "<!DOCTYPE html><html lang='en'><head><meta name='format-detection' content='telephone=no'><meta charset='UTF-8'><meta  name='viewport' content='width=device-width,initial-scale=1,user-scalable=no'/><title>LOXpixel! Setup</title>";
 const char HTTP_SCRIPT[]           PROGMEM = "<script>function c(l){"
 "document.getElementById('s').value=l.innerText||l.textContent;"
 "p = l.nextElementSibling.classList.contains('l');"
@@ -26,12 +26,12 @@ const char HTTP_SCRIPT[]           PROGMEM = "<script>function c(l){"
 
 const char HTTP_HEAD_END[]         PROGMEM = "</head><body class='{c}'><div class='wrap'>";
 
-const char HTTP_ROOT_MAIN[]        PROGMEM = "<h1>{v}</h1><h3>WiFiManager</h3>";
+const char HTTP_ROOT_MAIN[]        PROGMEM = "<h1>LOXpixel! Setup</h1><h3></h3><a href="https://unser-smartes-zuhause.de">http://unser-smartes-zuhause.de</a>";
 const char * const HTTP_PORTAL_MENU[] PROGMEM = {
 "<form action='/wifi'    method='get'><button>Configure WiFi</button></form><br/>\n", // MENU_WIFI
 "<form action='/0wifi'   method='get'><button>Configure WiFi (No Scan)</button></form><br/>\n", // MENU_WIFINOSCAN
-"<form action='/info'    method='get'><button>Info</button></form><br/>\n", // MENU_INFO
-"<form action='/param'   method='get'><button>Setup</button></form><br/>\n",//MENU_PARAM
+"<form action='/info'    method='get'><button>Chip Info</button></form><br/>\n", // MENU_INFO
+"<form action='/param'   method='get'><button>Setup LOXpixel! Parameters</button></form><br/>\n",//MENU_PARAM
 "<form action='/close'   method='get'><button>Close</button></form><br/>\n", // MENU_CLOSE
 "<form action='/restart' method='get'><button>Restart</button></form><br/>\n",// MENU_RESTART
 "<form action='/exit'    method='get'><button>Exit</button></form><br/>\n",  // MENU_EXIT
@@ -56,7 +56,7 @@ const char HTTP_FORM_PARAM_HEAD[]  PROGMEM = "<hr><br/>";
 const char HTTP_FORM_PARAM[]       PROGMEM = "<br/><input id='{i}' name='{n}' maxlength='{l}' value='{v}' {c}>";
 
 const char HTTP_SCAN_LINK[]        PROGMEM = "<br/><form action='/wifi?refresh=1' method='POST'><button name='refresh' value='1'>Refresh</button></form>";
-const char HTTP_SAVED[]            PROGMEM = "<div class='msg'>Saving Credentials<br/>Trying to connect ESP to network.<br />If it fails reconnect to AP to try again</div>";
+const char HTTP_SAVED[]            PROGMEM = "<div class='msg'>Saving Credentials<br/>Trying to connect LOXpixel! to network.<br />If it fails reconnect to AP to try again</div>";
 const char HTTP_PARAMSAVED[]       PROGMEM = "<div class='msg'>Saved<br/></div>";
 const char HTTP_END[]              PROGMEM = "</div></body></html>";
 const char HTTP_ERASEBTN[]         PROGMEM = "<br/><form action='/erase' method='get'><button class='D'>Erase WiFi Config</button></form>";
@@ -72,11 +72,11 @@ const char HTTP_BR[]               PROGMEM = "<br/>";
 const char HTTP_STYLE[]            PROGMEM = "<style>"
 ".c,body{text-align:center;font-family:verdana}div,input{padding:5px;font-size:1em;margin:5px 0;box-sizing:border-box;}"
 "input,button,.msg{border-radius:.3rem;width: 100%}"
-"button,input[type='button'],input[type='submit']{cursor:pointer;border:0;background-color:#1fa3ec;color:#fff;line-height:2.4rem;font-size:1.2rem;width:100%}"
+"button,input[type='button'],input[type='submit']{cursor:pointer;border:0;background-color:#69c350;color:#333333;line-height:2.4rem;font-size:1.2rem;width:100%}"
 "input[type='file']{border:1px solid #1fa3ec}"
 ".wrap {text-align:left;display:inline-block;min-width:260px;max-width:500px}"
 // links
-"a{color:#000;font-weight:700;text-decoration:none}a:hover{color:#1fa3ec;text-decoration:underline}"
+"a{color:#000;font-weight:700;text-decoration:none}a:hover{color:#ffffff;text-decoration:underline}"
 // quality icons
 ".q{height:16px;margin:0;padding:0 5px;text-align:right;min-width:38px;float:right}.q.q-0:after{background-position-x:0}.q.q-1:after{background-position-x:-16px}.q.q-2:after{background-position-x:-32px}.q.q-3:after{background-position-x:-48px}.q.q-4:after{background-position-x:-64px}.q.l:before{background-position-x:-80px;padding-right:5px}.ql .q{float:left}.q:after,.q:before{content:'';width:16px;height:16px;display:inline-block;background-repeat:no-repeat;background-position: 16px 0;"
 "background-image:url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAAAQCAMAAADeZIrLAAAAJFBMVEX///8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADHJj5lAAAAC3RSTlMAIjN3iJmqu8zd7vF8pzcAAABsSURBVHja7Y1BCsAwCASNSVo3/v+/BUEiXnIoXkoX5jAQMxTHzK9cVSnvDxwD8bFx8PhZ9q8FmghXBhqA1faxk92PsxvRc2CCCFdhQCbRkLoAQ3q/wWUBqG35ZxtVzW4Ed6LngPyBU2CobdIDQ5oPWI5nCUwAAAAASUVORK5CYII=');}"
@@ -92,36 +92,14 @@ const char HTTP_STYLE[]            PROGMEM = "<style>"
 ".h{display:none}"
 "button.D{background-color:#dc3630}"
 // invert
-"body.invert,body.invert a,body.invert h1 {background-color:#060606;color:#fff;}"
+"body.invert,body.invert a,body.invert h1 {background-color:#333333;color:#fff;}"
 "body.invert .msg{color:#fff;background-color:#282828;border-top:1px solid #555;border-right:1px solid #555;border-bottom:1px solid #555;}"
 "body.invert .q[role=img]{-webkit-filter:invert(1);filter:invert(1);}"
 "input:disabled {opacity: 0.5;}"
 "</style>";
 
 const char HTTP_HELP[]             PROGMEM =
- "<br/><h3>Available Pages</h3><hr>"
- "<table class='table'>"
- "<thead><tr><th>Page</th><th>Function</th></tr></thead><tbody>"
- "<tr><td><a href='/'>/</a></td>"
- "<td>Menu page.</td></tr>"
- "<tr><td><a href='/wifi'>/wifi</a></td>"
- "<td>Show WiFi scan results and enter WiFi configuration.(/0wifi noscan)</td></tr>"
- "<tr><td><a href='/wifisave'>/wifisave</a></td>"
- "<td>Save WiFi configuration information and configure device. Needs variables supplied.</td></tr>"
- "<tr><td><a href='/param'>/param</a></td>"
- "<td>Parameter page</td></tr>"
- "<tr><td><a href='/info'>/info</a></td>"
- "<td>Information page</td></tr>"
- "<tr><td><a href='/close'>/close</a></td>"
- "<td>Close the captiveportal popup,configportal will remain active</td></tr>"
- "<tr><td><a href='/exit'>/exit</a></td>"
- "<td>Exit Config Portal, configportal will close</td></tr>"
- "<tr><td><a href='/restart'>/restart</a></td>"
- "<td>Reboot the device</td></tr>"
- "<tr><td><a href='/erase'>/erase</a></td>"
- "<td>Erase WiFi configuration and reboot Device. Device will not reconnect to a network until new WiFi configuration data is entered.</td></tr>"
- "</table>"
- "<p/>More information about WiFiManager at <a href='https://github.com/tzapu/WiFiManager'>https://github.com/tzapu/WiFiManager</a>.";
+ "";
 
 #ifdef JSTEST
 const char HTTP_JS[] PROGMEM = 
@@ -360,3 +338,4 @@ const wifi_country_t WM_COUNTRY_JP{"JP",1,14,WIFI_COUNTRY_POLICY_AUTO};
 #endif
 
 #endif
+

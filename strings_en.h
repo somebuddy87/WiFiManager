@@ -74,7 +74,7 @@ const char HTTP_STYLE[]            PROGMEM = "<style>"
 ".c,body{text-align:center;font-family:verdana}div,input{padding:5px;font-size:1em;margin:5px 0;box-sizing:border-box;}"
 "input,button,.msg{border-radius:.3rem;width: 100%}"
 "button,input[type='button'],input[type='submit']{cursor:pointer;border:0;background-color:#69c350;color:#333333;line-height:2.4rem;font-size:1.2rem;width:100%}"
-"input[type='file']{border:1px solid #1fa3ec}"
+"input[type='file']{border:1px solid #69c350}"
 ".wrap {text-align:left;display:inline-block;min-width:260px;max-width:500px}"
 // links
 "a{color:#000;font-weight:700;text-decoration:none}a:hover{color:#ffffff;text-decoration:underline}"
@@ -86,7 +86,7 @@ const char HTTP_STYLE[]            PROGMEM = "<style>"
 "background-image:url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAALwAAAAgCAMAAACfM+KhAAAALVBMVEX///8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADAOrOgAAAADnRSTlMAESIzRGZ3iJmqu8zd7gKjCLQAAACmSURBVHgB7dDBCoMwEEXRmKlVY3L//3NLhyzqIqSUggy8uxnhCR5Mo8xLt+14aZ7wwgsvvPA/ofv9+44334UXXngvb6XsFhO/VoC2RsSv9J7x8BnYLW+AjT56ud/uePMdb7IP8Bsc/e7h8Cfk912ghsNXWPpDC4hvN+D1560A1QPORyh84VKLjjdvfPFm++i9EWq0348XXnjhhT+4dIbCW+WjZim9AKk4UZMnnCEuAAAAAElFTkSuQmCC');"
 "background-size: 95px 16px;}}"
 // msg callouts
-".msg{padding:20px;margin:20px 0;border:1px solid #eee;border-left-width:5px;border-left-color:#777}.msg h4{margin-top:0;margin-bottom:5px}.msg.P{border-left-color:#1fa3ec}.msg.P h4{color:#1fa3ec}.msg.D{border-left-color:#dc3630}.msg.D h4{color:#dc3630}"
+".msg{padding:20px;margin:20px 0;border:1px solid #eee;border-left-width:5px;border-left-color:#777}.msg h4{margin-top:0;margin-bottom:5px}.msg.P{border-left-color:#69c350}.msg.P h4{color:#69c350}.msg.D{border-left-color:#dc3630}.msg.D h4{color:#dc3630}"
 // lists
 "dt{font-weight:bold}dd{margin:0;padding:0 0 0.5em 0;min-height:12px}"
 "td{vertical-align: top;}"
@@ -94,7 +94,7 @@ const char HTTP_STYLE[]            PROGMEM = "<style>"
 "button.D{background-color:#dc3630}"
 // invert
 "body.invert,body.invert a,body.invert h1 {background-color:#333333;color:#fff;}"
-"body.invert .msg{color:#fff;background-color:#69c350;border-top:1px solid #555;border-right:1px solid #555;border-bottom:1px solid #555;}"
+"body.invert .msg{color:#fff;background-color:#282828;border-top:1px solid #555;border-right:1px solid #555;border-bottom:1px solid #555;}"
 "body.invert .q[role=img]{-webkit-filter:invert(1);filter:invert(1);}"
 "input:disabled {opacity: 0.5;}"
 "</style>";

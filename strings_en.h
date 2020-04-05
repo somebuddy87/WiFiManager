@@ -26,7 +26,7 @@ const char HTTP_SCRIPT[]           PROGMEM = "<script>function c(l){"
 
 const char HTTP_HEAD_END[]         PROGMEM = "</head><body class='{c}'><div class='wrap'>";
 
-const char HTTP_ROOT_MAIN[]        PROGMEM = "<h1>LOXpixel! V1.0</h1><h3>Setup</h3><a href='https://unser-smartes-zuhause.de'>https://unser-smartes-zuhause.de</a><br><br>";
+const char HTTP_ROOT_MAIN[]        PROGMEM = "<h1>LOXpixel! V1.0</h1><a href='https://unser-smartes-zuhause.de'>https://unser-smartes-zuhause.de</a><h3>Setup</h3>";
 
 const char * const HTTP_PORTAL_MENU[] PROGMEM = {
 "<form action='/wifi'    method='get'><button>Configure WiFi</button></form><br/>\n", // MENU_WIFI
